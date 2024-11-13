@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "sourceMap": true,
+      "outDir": "build",
+      "rootDir": "./src",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true, // Add this line to skip checking types in node_modules
+      "resolveJsonModule": true, // Ensure JSON modules are resolved correctly
+      "moduleResolution": "node" // Use Node module resolution
+    },
+    "exclude": ["node_modules", "dist", "**/*.spec.ts", "drizzle"]
+  }
+  
