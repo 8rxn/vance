@@ -1,4 +1,3 @@
-// src/routes.ts
 
 import { Router, Request, Response } from "express";
 import { getForexData } from "./handlers/forex";
@@ -91,7 +90,7 @@ router.post("/api/forex-data", getForexData);
  *               properties:
  *                 message:
  *                   type: string
- *                   example: "Accepted, Scraping"
+ *                   example: "Accepted, Scraping"  
  */
 router.post("/api/forex-data/scrape/all", scrapeAll);
 

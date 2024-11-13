@@ -8,7 +8,9 @@
     "dev": "nodemon",
     "build": "tsc",
     "start": "NODE_ENV=production node build/app.js",
-    "transpile": "swc ./src -d build"
+    "transpile": "swc ./src -d build",
+    "prod": "pnpm transpile && pm2 start build/src/app.js --name=app",
+    "scrape":"node --import=tsx ./src/lib/scrape-cron.ts"
   },
   "nodemonConfig": {
     "watch": [
