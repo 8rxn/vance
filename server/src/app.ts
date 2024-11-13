@@ -8,7 +8,7 @@ import { specs } from './config/swagger';
 
 export const app = express();
 const corsOptions = {
-  origin: ["http://localhost:5173", "http://localhost:3000", "http://localhost:8000" , "http://forex-api-frontend.aryn.wtf", `${process.env.FRONTENDURI}`],
+  origin: ["http://localhost:5173", "http://localhost:3000", "http://localhost:8000" , "https://forex-api-frontend.aryn.wtf", `${process.env.FRONTENDURI}`],
 };
 app.use(cors(corsOptions));
 
